@@ -1,0 +1,6 @@
+{
+  "name": "글로벌 진로탐험대 NEXT",
+  "description": "세종특별자치시교육청 글로벌 진로탐험대 행정지원포털 - 사업관리, 예산편성, 안전점검 및 성과분석 통합 운영 터미널",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,213 @@
+---
+name: Municipal Operations Terminal
+colors:
+  surface: '#f8f9ff'
+  surface-dim: '#cbdbf5'
+  surface-bright: '#f8f9ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#eff4ff'
+  surface-container: '#e5eeff'
+  surface-container-high: '#dce9ff'
+  surface-container-highest: '#d3e4fe'
+  on-surface: '#0b1c30'
+  on-surface-variant: '#44474e'
+  inverse-surface: '#213145'
+  inverse-on-surface: '#eaf1ff'
+  outline: '#74777e'
+  outline-variant: '#c4c6ce'
+  surface-tint: '#495f81'
+  primary: '#00132c'
+  on-primary: '#ffffff'
+  primary-container: '#0f2847'
+  on-primary-container: '#7990b4'
+  inverse-primary: '#b1c8ef'
+  secondary: '#0051d5'
+  on-secondary: '#ffffff'
+  secondary-container: '#316bf3'
+  on-secondary-container: '#fefcff'
+  tertiary: '#001613'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#002d29'
+  on-tertiary-container: '#249f92'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#d5e3ff'
+  primary-fixed-dim: '#b1c8ef'
+  on-primary-fixed: '#011c3a'
+  on-primary-fixed-variant: '#314868'
+  secondary-fixed: '#dbe1ff'
+  secondary-fixed-dim: '#b4c5ff'
+  on-secondary-fixed: '#00174b'
+  on-secondary-fixed-variant: '#003ea8'
+  tertiary-fixed: '#89f5e7'
+  tertiary-fixed-dim: '#6bd8cb'
+  on-tertiary-fixed: '#00201d'
+  on-tertiary-fixed-variant: '#005049'
+  background: '#f8f9ff'
+  on-background: '#0b1c30'
+  surface-variant: '#d3e4fe'
+typography:
+  display-lg:
+    fontFamily: Hanken Grotesk
+    fontSize: 2rem
+    fontWeight: '700'
+    lineHeight: 2.25rem
+    letterSpacing: -0.02em
+  display-md:
+    fontFamily: Hanken Grotesk
+    fontSize: 1.5rem
+    fontWeight: '700'
+    lineHeight: 1.75rem
+    letterSpacing: -0.015em
+  headline-lg:
+    fontFamily: Hanken Grotesk
+    fontSize: 1.25rem
+    fontWeight: '600'
+    lineHeight: 1.5rem
+    letterSpacing: -0.01em
+  headline-md:
+    fontFamily: Hanken Grotesk
+    fontSize: 1.125rem
+    fontWeight: '600'
+    lineHeight: 1.375rem
+    letterSpacing: -0.005em
+  headline-sm:
+    fontFamily: Hanken Grotesk
+    fontSize: 1rem
+    fontWeight: '600'
+    lineHeight: 1.25rem
+    letterSpacing: 0em
+  body-lg:
+    fontFamily: JetBrains Mono
+    fontSize: 0.875rem
+    fontWeight: '500'
+    lineHeight: 1.25rem
+    letterSpacing: -0.01em
+  body-md:
+    fontFamily: JetBrains Mono
+    fontSize: 0.8125rem
+    fontWeight: '400'
+    lineHeight: 1.125rem
+    letterSpacing: 0em
+  body-sm:
+    fontFamily: JetBrains Mono
+    fontSize: 0.75rem
+    fontWeight: '400'
+    lineHeight: 1rem
+    letterSpacing: 0.01em
+  tabular-num:
+    fontFamily: JetBrains Mono
+    fontSize: 0.8125rem
+    fontWeight: '500'
+    lineHeight: 1rem
+    letterSpacing: 0.02em
+  label-code:
+    fontFamily: JetBrains Mono
+    fontSize: 0.6875rem
+    fontWeight: '700'
+    lineHeight: 0.875rem
+    letterSpacing: 0.05em
+spacing:
+  gutter: 0.75rem
+  margin: 1rem
+  space-2xs: 0.125rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 0.75rem
+  space-lg: 1rem
+  space-xl: 1.5rem
+  space-2xl: 2rem
+---
+
+## Brand & Style
+
+This design system establishes an ultra-precise, high-density municipal operations terminal for administrative governance. Rooted in analytical clarity, structural rigor, and absolute transparency, the system prioritizes institutional accountability over ornamental decoration. 
+
+The aesthetic synthesizes an operational command-center philosophy with utilitarian administrative structure. Surfaces are flat and architectural, relying on planar field shifts and razor-sharp structural alignments rather than superficial elevation or soft borders. Monospaced typographic fidelity guarantees vertical tabular alignment across fiscal metrics, audit trails, and demographic logs, while authoritative sans-serif display headers preserve executive clarity. 
+
+Interactions deliver instant, zero-latency feedback through crisp high-contrast state transitions. The visual environment communicates sovereignty, unyielding data integrity, and bureaucratic efficiency.
+
+## Colors
+
+The color palette centers on `#0F2847`, a commanding deep maritime navy serving as the foundational administrative anchor. This primary value dictates top-level navigational planes, active command headers, and critical decision surfaces. 
+
+- **Primary (`#0F2847`):** Command-tier structural framing, active system anchors, primary action states.
+- **Secondary (`#2563EB`):** Focused analytical interactions, interactive hyperlinks, dynamic telemetric cues.
+- **Tertiary (`#0D9488`):** Deep municipal teal utilized for administrative verification steps, compliance sign-offs, and ledger validations.
+- **Neutral (`#64748B`):** Cool slate tone informing structural dividing baselines, meta-labels, and auxiliary readouts.
+
+Background architecture maintains clean optical separation: canvas layers execute in crisp `#F8FAFC`, with core analytical panels and data terminals rendered in pure `#FFFFFF`. Sub-panels and recessed readouts use `#F1F5F9`. Status tokens (`#059669` Success, `#D97706` Warning, `#DC2626` Danger) are saturated deliberately for unambiguous identification at glance-level terminal observation.
+
+## Typography
+
+Typographic execution enforces an institutional split: **Hanken Grotesk** governs structural and executive communication, providing clean grotesque balance across page-level markers, departmental identifiers, and section titles. **JetBrains Mono** manages all data fields, analytical ledgers, municipal figures, status indicators, and form elements.
+
+This typographic division treats all administrative output as verifiable code and record data. Monospaced tracking is calibrated for dense columns, allowing vertical optical alignment of decimal points and tracking indices. For East Asian administrative text strings, fallbacks default strictly to system gothic engines (`Pretendard`, `Noto Sans KR`, `Apple SD Gothic Neo`) configured with zero letter-kerning deviation to maintain structural parity with monospaced components.
+
+## Layout & Spacing
+
+The terminal operates on an ultra-dense 12-column layout designed to maximize visible data payload above the fold without sacrificing legibility. 
+
+- **Layout Grid:** A compact 12-column fluid grid governed by `0.75rem` (12px) gutters and `1rem` (16px) margins. Elements bind edge-to-edge, relying on crisp internal cell paddings rather than expansive white space.
+- **Rhythm & Matrix:** Component spacing strictly adheres to an analytical 4px base scale: `0.125rem` (2px) micro-spacers for inline badges, `0.25rem` (4px) for cell margins, `0.5rem` (8px) for input padding, and `0.75rem` (12px) for analytical panel breaks.
+- **Responsive Adaptation:**
+  - **Desktop (1280px+):** Full multi-pane operational console with side-by-side terminal logs, live audit streams, and data sheets.
+  - **Tablet (768px - 1279px):** Split-view collapsing to dual-zone operations; side panels tuck into an anchored full-height command drawer.
+  - **Mobile (< 768px):** Linear execution; grid collapses to single-span operational cards with fixed data-table horizontal scrolling tracks.
+
+## Elevation & Depth
+
+In alignment with the sharp municipal terminal paradigm, elevation is achieved entirely without drop shadows. The design system rejects soft blurs and simulated physical extrusion in favor of strict **tonal layering** and **planar contrast**:
+
+- **Zero-Depth Planes:** Shadows are systematically disabled across all surfaces (`box-shadow: none`). Surfaces never "float" in ambiguous space.
+- **Tonal Stepping:** The layout establishes hierarchy via solid surface tones:
+  - Base Workspace Canvas: `#F8FAFC`
+  - Operational Work Surfaces: `#FFFFFF`
+  - Recessed Control Wells & Readouts: `#F1F5F9`
+  - Command Bar & Sticky Headers: `#0F2847` with inverse text
+- **Hairline Boundary Separation:** Hierarchy and separation are defined by rigid `1px solid #CBD5E1` rules. Nested data regions use alternating zebra fills (`#FFFFFF` to `#F8FAFC`) rather than elevation gaps.
+- **Modals & Overlays:** Critical executive modals do not cast drop shadows. Instead, they use a high-contrast dark overlay (`#0F172A` at 60% opacity) and are bound by a prominent `2px solid #0F2847` border frame.
+
+## Shapes
+
+The shape system is strictly **sharp (`0`)**. Every element—from primary interactive buttons to badge chips, card containers, dialog overlays, and input controls—features hard, unfilleted 90-degree right angles (`border-radius: 0px`).
+
+This uncompromising geometric rigidity reflects the exactitude of public records, legal statutes, and municipal ledger architecture. Visual boundaries align directly to pixel coordinate planes, eliminating optical distortion in high-density data matrices and reinforcing the terminal identity.
+
+## Components
+
+### Buttons
+- **Shape & Frame:** `border-radius: 0px`, `padding: 0.5rem 1rem`, text set in `JetBrains Mono` 12px bold uppercase with `0.05em` tracking.
+- **Primary:** Background `#0F2847`, text `#FFFFFF`, border `1px solid #0F2847`. Hover shifts background to `#1E3A8A`. Active state inverts text to `#93C5FD`.
+- **Secondary:** Background `#FFFFFF`, text `#0F2847`, border `1px solid #CBD5E1`. Hover shifts background to `#F1F5F9` with border `#0F2847`.
+- **Destructive:** Background `#DC2626`, text `#FFFFFF`, border `1px solid #DC2626`. Hover shifts to `#B91C1C`.
+- **Disabled:** Background `#F1F5F9`, text `#94A3B8`, border `1px solid #E2E8F0`, cursor not-allowed.
+
+### Form Inputs & Selectors
+- **Fields:** Sharp 0px corners, height `36px`, padding `0.375rem 0.5rem`, monospaced body text (`JetBrains Mono` 13px).
+- **Default State:** Background `#FFFFFF`, border `1px solid #CBD5E1`, text `#0F172A`.
+- **Focus State:** Border `1px solid #0F2847`, high-contrast outline `1px solid #0F2847`, background `#FFFFFF`. Zero halo glow.
+- **Error State:** Border `1px solid #DC2626`, accompanying monospaced error label `#DC2626` below with icon indicator.
+
+### Data Tables (Terminal Grid)
+- **Cell Structure:** Density set to high (`padding: 0.375rem 0.75rem`), height `32px` per row.
+- **Header:** Background `#0F2847`, text `#FFFFFF`, font `JetBrains Mono` 11px uppercase bold, bottom border `2px solid #0F172A`.
+- **Numeric Alignment:** All financial, metric, and tracking values strictly right-aligned using tabular figures with explicit monospaced spacing.
+- **Row Borders:** Horizontal divider `1px solid #E2E8F0`, alternating striping on even rows (`#F8FAFC`). Row hover applies `#E2E8F0` at 50% opacity.
+
+### Status Badges & Operational Chips
+- **Geometry:** Sharp rectangle (`border-radius: 0px`), padding `0.125rem 0.375rem`, font `JetBrains Mono` 11px uppercase bold.
+- **Success (Approved/Normal):** Border `1px solid #059669`, background `#ECFDF5`, text `#065F46`.
+- **Warning (Review/Pending):** Border `1px solid #D97706`, background `#FFFBEB`, text `#92400E`.
+- **Danger (Action Required/Revoked):** Border `1px solid #DC2626`, background `#FEF2F2`, text `#991B1B`.
+- **Neutral (Archived/System):** Border `1px solid #64748B`, background `#F8FAFC`, text `#334155`.
+
+### Checkboxes & Radio Controls
+- **Structure:** Square markers (`14px × 14px`), `border-radius: 0px`, border `1px solid #64748B`.
+- **Checked:** Background `#0F2847`, border `1px solid #0F2847`. Checkbox displays a crisp crosshair or solid square marker; radio elements contain an inner solid sharp-square slug (`6px × 6px`).
+
+### Cards & Analytical Panels
+- **Structure:** `border-radius: 0px`, border `1px solid #CBD5E1`, background `#FFFFFF`.
+- **Header Bar:** Integral header division bounded by a `1px solid #CBD5E1` lower border, background `#F8FAFC`, `padding: 0.5rem 0.75rem`. Title set in `Hanken Grotesk` 14px bold, action controls right-aligned.

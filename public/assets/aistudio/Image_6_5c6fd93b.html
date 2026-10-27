@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline":"#74777e","on-tertiary-container":"#249f92","error-container":"#ffdad6","on-secondary-fixed":"#00174b","on-surface-variant":"#44474e","on-primary-fixed-variant":"#314868","surface-tint":"#495f81","on-error-container":"#93000a","surface-container":"#e5eeff","secondary-container":"#316bf3","surface-container-low":"#eff4ff","on-background":"#0b1c30","secondary":"#0051d5","on-tertiary-fixed-variant":"#005049","inverse-on-surface":"#eaf1ff","inverse-surface":"#213145","primary-container":"#0f2847","tertiary-container":"#002d29","tertiary-fixed":"#89f5e7","surface-variant":"#d3e4fe","tertiary":"#001613","primary-fixed-dim":"#b1c8ef","on-primary-fixed":"#011c3a","inverse-primary":"#b1c8ef","secondary-fixed-dim":"#b4c5ff","surface-bright":"#f8f9ff","on-tertiary":"#ffffff","primary":"#00132c","outline-variant":"#c4c6ce","on-secondary":"#ffffff","surface":"#f8f9ff","on-secondary-fixed-variant":"#003ea8","secondary-fixed":"#dbe1ff","surface-container-high":"#dce9ff","on-primary":"#ffffff","tertiary-fixed-dim":"#6bd8cb","error":"#ba1a1a","on-secondary-container":"#fefcff","on-primary-container":"#7990b4","surface-container-lowest":"#ffffff","background":"#f8f9ff","primary-fixed":"#d5e3ff","on-tertiary-fixed":"#00201d","on-error":"#ffffff","surface-dim":"#cbdbf5","on-surface":"#0b1c30","surface-container-highest":"#d3e4fe"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-2xl":"2rem","space-2xs":"0.125rem","space-xl":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-lg":"1rem","gutter":"0.75rem","space-md":"0.75rem","margin":"1rem"},fontFamily:{"headline-md":["Hanken Grotesk"],"headline-sm":["Hanken Grotesk"],"tabular-num":["JetBrains Mono"],"display-lg":["Hanken Grotesk"],"body-sm":["JetBrains Mono"],"body-lg":["JetBrains Mono"],"label-code":["JetBrains Mono"],"headline-lg":["Hanken Grotesk"],"body-md":["JetBrains Mono"],"display-md":["Hanken Grotesk"]},fontSize:{"headline-md":["1.125rem",{"lineHeight":"1.375rem","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-sm":["1rem",{"lineHeight":"1.25rem","letterSpacing":"0em","fontWeight":"600"}],"tabular-num":["0.8125rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"500"}],"display-lg":["2rem",{"lineHeight":"2.25rem","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"400"}],"body-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.01em","fontWeight":"500"}],"label-code":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.05em","fontWeight":"700"}],"headline-lg":["1.25rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0em","fontWeight":"400"}],"display-md":["1.5rem",{"lineHeight":"1.75rem","letterSpacing":"-0.015em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-primary text-on-primary z-50 flex flex-col justify-between select-none"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-lg flex items-center gap-space-md bg-primary-container shrink-0"><div class="w-9 h-9 bg-surface-container-lowest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-xl">account_balance</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-surface truncate tracking-tight">글로벌 진로탐험대 NEXT</span></div><span class="font-label-code text-label-code text-on-primary-container truncate">세종특별자치시교육청 행정지원포털</span></div></div><div class="px-space-md py-space-sm bg-surface-container/10 flex items-center justify-between shrink-0"><span class="font-label-code text-label-code text-on-primary-container uppercase tracking-wider">기관망 직통 채널</span><span class="inline-flex items-center gap-space-2xs font-label-code text-label-code text-tertiary-fixed"><span class="w-1.5 h-1.5 bg-tertiary-fixed rounded-full animate-pulse"></span>ONLINE</span></div><nav class="flex-1 overflow-y-auto px-space-xs py-space-xs space-y-space-2xs" data-active-classes="bg-primary-container text-surface-bright font-bold"><a class="flex items-center justify-between px-space-md py-space-sm text-on-primary-container hover:bg-primary-container/60 hover:text-surface transition-colors" data-path="dashboard" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">dashboard</span><span class="font-body-md text-body-md tracking-tight">대시보드</span></div><span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface/10 text-surface">SYS</span></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-primary-container hover:bg-primary-container/60 hover:text-surface transition-colors" data-path="project-management" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">folder_open</span><span class="font-body-md text-body-md tracking-tight">사업관리</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-primary-container text-surface-bright font-bold" data-path="budget-management" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">payments</span><span class="font-body-md text-body-md tracking-tight">예산관리</span></div><span class="font-tabular-num text-tabular-num text-surface-variant font-semibold">FY27</span></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-primary-container hover:bg-primary-container/60 hover:text-surface transition-colors" data-path="participation-management" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">groups</span><span class="font-body-md text-body-md tracking-tight">참여관리</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-primary-container hover:bg-primary-container/60 hover:text-surface transition-colors" data-path="safety-management" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">health_and_safety</span><span class="font-body-md text-body-md tracking-tight">안전관리</span></div><span class="font-label-code text-label-code px-space-xs py-0.5 bg-error text-on-error font-bold">2건 미완료</span></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-primary-container hover:bg-primary-container/60 hover:text-surface transition-colors" data-path="performance-evaluation" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">query_stats</span><span class="font-body-md text-body-md tracking-tight">성과관리</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-primary-container hover:bg-primary-container/60 hover:text-surface transition-colors" data-path="alternative-comparison" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">compare_arrows</span><span class="font-body-md text-body-md tracking-tight">대안비교</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-primary-container hover:bg-primary-container/60 hover:text-surface transition-colors" data-path="reports-export" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">description</span><span class="font-body-md text-body-md tracking-tight">보고서</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-primary-container hover:bg-primary-container/60 hover:text-surface transition-colors" data-path="system-administration" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">admin_panel_settings</span><span class="font-body-md text-body-md tracking-tight">시스템관리</span></div></a></nav></div><div class="p-space-md bg-primary-container shrink-0 space-y-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 bg-on-tertiary-container rounded-full"></span><span class="font-body-sm text-body-sm text-surface font-semibold">통합행정망 정상가동중</span></div><span class="font-label-code text-label-code text-on-primary-container">v2.4.1</span></div><div class="flex items-center justify-between font-label-code text-label-code text-on-primary-container pt-space-2xs"><span class="truncate">교육청 통합데이터연계</span><span class="text-tertiary-fixed">SYNC OK</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-sm">home</span><span>행정지원포털</span><span class="text-outline">/</span><span class="text-on-surface font-semibold">운영관리</span></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1"><span class="font-label-code text-label-code text-on-surface-variant uppercase">회계연도</span><select class="bg-transparent font-headline-sm text-body-md text-primary font-bold focus:outline-none cursor-pointer pr-space-xs"><option selected="">2027 사업연도 [선택]</option><option>2026 사업연도</option><option>2025 사업연도</option></select><span class="font-label-code text-label-code bg-surface-container px-space-xs py-0.5 text-primary-container">예시 데이터 기준</span></div><div class="relative hidden lg:block w-72"><span class="material-symbols-outlined absolute left-space-sm top-2 text-outline text-lg">search</span><input class="w-full h-9 pl-9 pr-space-sm bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" placeholder="사업명, 연수단 ID, 문서 검색..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="relative w-9 h-9 flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface" title="시스템 알림" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 bg-error text-on-error font-label-code text-label-code flex items-center justify-center font-bold">3</span></button><button class="w-9 h-9 flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface" title="업무 매뉴얼 / 도움말" type="button"><span class="material-symbols-outlined text-xl">help_outline</span></button><button class="w-9 h-9 flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface" title="시스템 환경설정" type="button"><span class="material-symbols-outlined text-xl">settings</span></button></div><div class="h-6 w-px bg-outline-variant"></div><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UDEam6K8i61R-2cnrEZTy_-Vn42YXJtWCSo1Gdjky5Y_RAGHdADwxgWNuCSgGDTs2m71IBSrQYUo8muhQZsomD8EstXjRIlxO3nxhkUFlk1Uz9R54SRMYwYkApqnHEHUrsE8DoT8hr7l_bLLWiyKwyRWFo0ps9_WngrbC2YiMNyz_dgtQQbIZExnbZT2l-MjeudE7NbJJbLc8iF-yLPV7sRhQR7FbCHE07KyZhfoYOR6qbmV1BBgKi9Q"/><div class="flex flex-col text-left"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-body-md text-on-surface font-bold leading-none">김지현 장학관</span><span class="font-label-code text-label-code bg-primary text-on-primary px-space-xs py-0.5">교육청 총괄 관리자</span></div><span class="font-label-code text-label-code text-on-surface-variant leading-none mt-1">세종교육청 진로교육과</span></div><button class="w-8 h-8 flex items-center justify-center text-outline hover:text-error hover:bg-error-container/30 transition-colors ml-space-xs" title="로그아웃" type="button"><span class="material-symbols-outlined text-lg">logout</span></button></div></div></header><main class="relative w-full pt-16 bg-surface min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full space-y-space-md">
+<!-- Command Header & Scope Indicator -->
+<div class="bg-surface-container-lowest p-space-lg flex flex-col xl:flex-row xl:items-center justify-between gap-space-md shadow-sm">
+<div class="space-y-space-2xs min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight">예산관리</span>
+<span class="font-label-code text-label-code bg-surface-container-high text-primary px-space-xs py-0.5">FY2027 AUDIT ACTIVE</span>
+<span class="font-label-code text-label-code bg-tertiary-container text-tertiary-fixed px-space-xs py-0.5">회계검토모드</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">사업비 편성, 산출 근거, 세부 집행 내역 및 예산 투명성을 검토·관리합니다.</p>
+<div class="inline-flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 mt-1">
+<span class="material-symbols-outlined text-secondary text-sm">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">현재 조회 사업: 2027 글로벌 진로탐험대 시범사업</span>
+<span class="font-label-code text-label-code text-outline">|</span>
+<span class="font-tabular-num text-tabular-num text-secondary font-bold">확정교부액 ₩50,000,000</span>
+</div>
+</div>
+<!-- Action Controls -->
+<div class="flex items-center flex-wrap gap-space-xs shrink-0">
+<button class="h-9 px-space-md bg-surface text-primary border-0 hover:bg-surface-container-high transition-colors font-label-code text-label-code uppercase tracking-wider flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-sm">compare_arrows</span>
+        예산 비교
+      </button>
+<button class="h-9 px-space-md bg-surface text-primary border-0 hover:bg-surface-container-high transition-colors font-label-code text-label-code uppercase tracking-wider flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-sm">file_download</span>
+        엑셀 내보내기 (xlsx)
+      </button>
+<button class="h-9 px-space-md bg-primary-container text-surface-bright border-0 hover:bg-primary transition-colors font-label-code text-label-code uppercase tracking-wider flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-sm">add_box</span>
+        예산 항목 추가
+      </button>
+</div>
+</div>
+<!-- Top KPI Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-gutter">
+<!-- Card 1: 확정 예산 -->
+<div class="bg-surface-container-lowest p-space-md space-y-space-xs shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">01. 확정 예산 (분모)</span>
+<span class="material-symbols-outlined text-outline text-base">account_balance_wallet</span>
+</div>
+<div>
+<div class="font-tabular-num text-headline-lg font-bold text-primary">₩50,000,000</div>
+<div class="font-label-code text-label-code text-outline mt-1 truncate">교육비특별회계 확정액</div>
+</div>
+<div class="h-1 w-full bg-surface-container">
+<div class="h-full bg-primary" style="width: 100%;"></div>
+</div>
+</div>
+<!-- Card 2: 현재 집행액 -->
+<div class="bg-surface-container-lowest p-space-md space-y-space-xs shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">02. 현재 집행액</span>
+<span class="material-symbols-outlined text-secondary text-base">receipt_long</span>
+</div>
+<div>
+<div class="font-tabular-num text-headline-lg font-bold text-secondary">₩20,000,000</div>
+<div class="font-label-code text-label-code text-outline mt-1 truncate">원인행위 및 지출완료</div>
+</div>
+<div class="h-1 w-full bg-surface-container">
+<div class="h-full bg-secondary" style="width: 40%;"></div>
+</div>
+</div>
+<!-- Card 3: 잔여 예산 -->
+<div class="bg-surface-container-lowest p-space-md space-y-space-xs shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">03. 잔여 예산</span>
+<span class="material-symbols-outlined text-tertiary-container text-base">savings</span>
+</div>
+<div>
+<div class="font-tabular-num text-headline-lg font-bold text-primary-container">₩30,000,000</div>
+<div class="font-label-code text-label-code text-outline mt-1 truncate">집행가능 잔여액</div>
+</div>
+<div class="h-1 w-full bg-surface-container">
+<div class="h-full bg-on-tertiary-container" style="width: 60%;"></div>
+</div>
+</div>
+<!-- Card 4: 예산 집행률 -->
+<div class="bg-surface-container-lowest p-space-md space-y-space-xs shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">04. 예산 집행률</span>
+<span class="material-symbols-outlined text-secondary text-base">donut_large</span>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-tabular-num text-headline-lg font-bold text-primary">40.0%</span>
+<span class="font-label-code text-label-code text-secondary font-bold">정상추진</span>
+</div>
+<div class="font-label-code text-label-code text-outline mt-1 truncate">공공지표 달성기준 적정</div>
+</div>
+<div class="h-1 w-full bg-surface-container">
+<div class="h-full bg-secondary-container" style="width: 40%;"></div>
+</div>
+</div>
+<!-- Card 5: 학생 1인당 소요비용 -->
+<div class="bg-surface-container-lowest p-space-md space-y-space-xs shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">05. 학생 1인당 비용</span>
+<span class="material-symbols-outlined text-outline text-base">person</span>
+</div>
+<div>
+<div class="font-tabular-num text-headline-lg font-bold text-primary">₩500,000</div>
+<div class="font-label-code text-label-code text-outline mt-1 truncate">공공예산 총 100명 분할</div>
+</div>
+<div class="h-1 w-full bg-surface-container">
+<div class="h-full bg-primary-fixed-dim" style="width: 100%;"></div>
+</div>
+</div>
+</div>
+<!-- Legend & Auditing Guide -->
+<div class="bg-surface-container-low px-space-md py-space-sm flex flex-wrap items-center justify-between gap-space-sm text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-code text-label-code bg-primary text-on-primary px-space-xs py-0.5 uppercase">회계원칙</span>
+<span>계산값(자동계산)과 입력값을 명확히 구분하여 전산 감사 추적성을 확보합니다.</span>
+</div>
+<div class="flex items-center gap-space-md font-label-code text-label-code">
+<span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 bg-surface-container-lowest border-0"></span> 입력항목 (단가·수량)</span>
+<span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 bg-surface-container-high border-0"></span> <span class="material-symbols-outlined text-xs">functions</span> 전산 자동 산출값</span>
+<span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 bg-error rounded-full"></span> 즉시 보완필요</span>
+</div>
+</div>
+<!-- Main Table Section: 세부 예산 산출내역 및 집행 현황 -->
+<div class="bg-surface-container-lowest shadow-sm flex flex-col overflow-hidden">
+<!-- Panel Header Bar -->
+<div class="bg-surface-container-low px-space-md py-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-lg">table_chart</span>
+<span class="font-headline-sm text-headline-sm text-primary">세부 예산 산출내역 및 집행 현황</span>
+<span class="font-label-code text-label-code bg-surface-container px-space-xs py-0.5 text-on-surface-variant">전산 대사 완료 (5건)</span>
+</div>
+<div class="flex items-center gap-space-sm font-label-code text-label-code text-on-surface-variant">
+<span>통화단위: KRW (원)</span>
+<button class="hover:text-primary transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">refresh</span>
+          새로고침
+        </button>
+</div>
+</div>
+<!-- Data Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-primary text-on-primary font-label-code text-label-code tracking-wider uppercase">
+<th class="py-space-sm px-space-md font-semibold whitespace-nowrap">예산 항목</th>
+<th class="py-space-sm px-space-md font-semibold">산출 근거 (상세 수식)</th>
+<th class="py-space-sm px-space-md font-semibold text-right whitespace-nowrap bg-primary-container">단가 (원) [입력]</th>
+<th class="py-space-sm px-space-md font-semibold text-right whitespace-nowrap bg-primary-container">수량 [입력]</th>
+<th class="py-space-sm px-space-md font-semibold text-right whitespace-nowrap bg-surface-container-high text-primary">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">functions</span>
+                계획 예산 (원) [계산값]
+              </span>
+</th>
+<th class="py-space-sm px-space-md font-semibold text-right whitespace-nowrap">집행액 (원)</th>
+<th class="py-space-sm px-space-md font-semibold text-right whitespace-nowrap">잔액 (원)</th>
+<th class="py-space-sm px-space-md font-semibold text-center whitespace-nowrap">상태 / 검토의견</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-md text-body-md">
+<!-- Row 1: 항공 및 교통비 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-space-sm px-space-md font-semibold whitespace-nowrap">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-sm">flight_takeoff</span>
+<span>항공 및 교통비</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant font-body-sm text-body-sm">
+              왕복 항공료 및 전용버스 4대 임차 (인천-싱가포르 직항 및 현지 전세버스)
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num text-on-surface">
+              ₩850,000
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num text-on-surface">
+              100명
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num font-bold bg-surface-container-high text-primary">
+              ₩85,000,000
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num font-semibold text-secondary">
+              ₩20,000,000
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num font-semibold text-on-surface">
+              ₩65,000,000
+            </td>
+<td class="py-space-sm px-space-md text-center whitespace-nowrap">
+<span class="inline-block px-space-xs py-0.5 bg-surface-container text-secondary font-label-code text-label-code font-bold">
+                정상집행 (선금지급)
+              </span>
+</td>
+</tr>
+<!-- Row 2: 숙박비 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-low/30">
+<td class="py-space-sm px-space-md font-semibold whitespace-nowrap">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-outline text-sm">hotel</span>
+<span>숙박비</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant font-body-sm text-body-sm">
+              2인 1실 호텔 (현지 안전인증 4성급 호텔 6박 기준)
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num text-on-surface">
+              ₩90,000
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num text-on-surface">
+              300실·박
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num font-bold bg-surface-container-high text-primary">
+              ₩27,000,000
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num text-outline">
+              ₩0
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num font-semibold text-on-surface">
+              ₩27,000,000
+            </td>
+<td class="py-space-sm px-space-md text-center whitespace-nowrap">
+<span class="inline-block px-space-xs py-0.5 bg-surface-container-high text-on-surface-variant font-label-code text-label-code">
+                집행예정
+              </span>
+</td>
+</tr>
+<!-- Row 3: 프로그램 운영비 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-error-container/20">
+<td class="py-space-sm px-space-md font-semibold whitespace-nowrap">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-sm">psychology</span>
+<span>프로그램 운영비</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-body-sm text-body-sm">
+<div class="text-on-surface-variant">싱가포르 국립대 AI 워크숍 및 랩 투어 등록비</div>
+<div class="text-error font-label-code text-label-code flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-xs">warning</span>
+<span>강사료 산출근거 미등록 (원천징수/환율기준 누락)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num text-on-surface">
+              ₩150,000
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num text-on-surface">
+              100명
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num font-bold bg-surface-container-high text-primary">
+              ₩15,000,000
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num text-outline">
+              ₩0
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num font-semibold text-on-surface">
+              ₩15,000,000
+            </td>
+<td class="py-space-sm px-space-md text-center whitespace-nowrap">
+<span class="inline-block px-space-xs py-0.5 bg-error text-on-error font-label-code text-label-code font-bold">
+                보완필요 (승인보류)
+              </span>
+</td>
+</tr>
+<!-- Row 4: 여행자 및 안전보험료 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-space-sm px-space-md font-semibold whitespace-nowrap">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">security</span>
+<span>여행자 및 안전보험료</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant font-body-sm text-body-sm">
+              공공 여행자 안심보험 (상해/질병/배상 3억원 보장 상품)
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num text-on-surface">
+              ₩25,000
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num text-on-surface">
+              110명 <span class="text-outline text-xs">(학생+인솔)</span>
+</td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num font-bold bg-surface-container-high text-primary">
+              ₩2,750,000
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num text-outline">
+              ₩0
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num font-semibold text-on-surface">
+              ₩2,750,000
+            </td>
+<td class="py-space-sm px-space-md text-center whitespace-nowrap">
+<span class="inline-block px-space-xs py-0.5 bg-surface-container-low text-tertiary font-label-code text-label-code font-bold">
+                가입확약완료
+              </span>
+</td>
+</tr>
+<!-- Row 5: 비상대응 및 방역경비 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-low/30">
+<td class="py-space-sm px-space-md font-semibold whitespace-nowrap">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-outline text-sm">medical_services</span>
+<span>비상대응 및 방역경비</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant font-body-sm text-body-sm">
+              응급의약품 키트 및 현지 긴급이송 예비비 (비상대책비 배정)
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num text-on-surface">
+              ₩500,000
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num text-on-surface">
+              1식
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num font-bold bg-surface-container-high text-primary">
+              ₩500,000
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num text-outline">
+              ₩0
+            </td>
+<td class="py-space-sm px-space-md text-right font-tabular-num text-tabular-num font-semibold text-on-surface">
+              ₩500,000
+            </td>
+<td class="py-space-sm px-space-md text-center whitespace-nowrap">
+<span class="inline-block px-space-xs py-0.5 bg-surface-container text-on-surface-variant font-label-code text-label-code">
+                예비비 적합
+              </span>
+</td>
+</tr>
+</tbody>
+<!-- Table Total Row -->
+<tfoot>
+<tr class="bg-primary-container text-surface-bright font-headline-sm text-body-lg">
+<td class="py-space-md px-space-md font-bold whitespace-nowrap">
+              계획 합계
+            </td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-primary-container">
+              총 5개 회계항목 (교육청 교부금 ₩50,000,000 + 수익자부담/참가보조 포함 총액)
+            </td>
+<td class="py-space-md px-space-md text-right font-tabular-num text-on-primary-container">-</td>
+<td class="py-space-md px-space-md text-right font-tabular-num text-on-primary-container">-</td>
+<td class="py-space-md px-space-md text-right font-tabular-num text-headline-sm font-bold text-surface-bright bg-primary">
+              ₩130,250,000
+            </td>
+<td class="py-space-md px-space-md text-right font-tabular-num text-headline-sm font-bold text-secondary-fixed">
+              ₩20,000,000
+            </td>
+<td class="py-space-md px-space-md text-right font-tabular-num text-headline-sm font-bold text-surface-bright">
+              ₩110,250,000
+            </td>
+<td class="py-space-md px-space-md text-center font-label-code text-label-code text-tertiary-fixed">
+              집행률 15.35%
+            </td>
+</tr>
+</tfoot>
+</table>
+</div>
+<!-- Table Action & Pagination Footer -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-code text-label-code">총 5개 항목 표시 중</span>
+<span class="text-outline">|</span>
+<span>기준환율: 1 SGD = 1,020.50 KRW (실시간 고시환율 자동적용)</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-code text-label-code">
+<button class="px-space-sm py-1 bg-surface-container-lowest text-primary hover:bg-surface-container transition-colors" type="button">수식 재계산</button>
+<button class="px-space-sm py-1 bg-surface-container-lowest text-primary hover:bg-surface-container transition-colors" type="button">감사로그 확인</button>
+</div>
+</div>
+</div>
+<!-- Bottom Analysis Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Left Card: 계획 예산 대비 집행액 추이 차트 -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">bar_chart</span>
+<span class="font-headline-sm text-headline-sm text-primary">비목별 계획 예산 비중</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">총액 ₩130.2M 기준</span>
+</div>
+<!-- Category Progress / Stacked Breakdown -->
+<div class="space-y-space-sm">
+<!-- Transportation: 65% -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1">
+<span class="w-2 h-2 bg-secondary"></span> 항공 및 교통비
+            </span>
+<span class="font-tabular-num font-bold text-primary">65.3% (₩85,000,000)</span>
+</div>
+<div class="h-2 w-full bg-surface-container">
+<div class="h-full bg-secondary" style="width: 65.3%;"></div>
+</div>
+</div>
+<!-- Accommodation: 21% -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1">
+<span class="w-2 h-2 bg-primary"></span> 숙박비
+            </span>
+<span class="font-tabular-num font-bold text-primary">20.7% (₩27,000,000)</span>
+</div>
+<div class="h-2 w-full bg-surface-container">
+<div class="h-full bg-primary" style="width: 20.7%;"></div>
+</div>
+</div>
+<!-- Program Operations: 12% -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1">
+<span class="w-2 h-2 bg-error"></span> 프로그램 운영비
+            </span>
+<span class="font-tabular-num font-bold text-error">11.5% (₩15,000,000)</span>
+</div>
+<div class="h-2 w-full bg-surface-container">
+<div class="h-full bg-error" style="width: 11.5%;"></div>
+</div>
+</div>
+<!-- Insurance & Emergency: 2% -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface flex items-center gap-1">
+<span class="w-2 h-2 bg-on-tertiary-container"></span> 안전보험 및 방역
+            </span>
+<span class="font-tabular-num font-bold text-primary">2.5% (₩3,250,000)</span>
+</div>
+<div class="h-2 w-full bg-surface-container">
+<div class="h-full bg-on-tertiary-container" style="width: 2.5%;"></div>
+</div>
+</div>
+</div>
+<!-- Execution Ratio Snapshot -->
+<div class="bg-surface-container-low p-space-sm flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">원인행위 기준 집행 진척률</span>
+<span class="font-tabular-num text-secondary font-bold">15.4% (선급금 지급 완료)</span>
+</div>
+</div>
+<!-- Middle Card: 예산 산출 근거 누락 및 검토 알림 -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-base">rule_settings</span>
+<span class="font-headline-sm text-headline-sm text-primary">산출근거 정합성 감사</span>
+</div>
+<span class="font-label-code text-label-code bg-error-container text-on-error-container px-space-xs py-0.5 font-bold">1건 요조치</span>
+</div>
+<!-- Amber Alert Box -->
+<div class="bg-error-container/30 p-space-md space-y-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-lg">error</span>
+<span class="font-headline-sm text-body-md text-error font-bold">프로그램 운영비 항목 지적</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+          싱가포르 국립대 AI 워크숍 강사료 지급 기준(시간당 단가 산출내역서 및 해외 송금 증빙 서식)이 전산에 미입력되었습니다.
+        </p>
+<div class="pt-space-xs flex items-center justify-between font-label-code text-label-code text-on-surface-variant">
+<span>영향: 지출원인행위 전결 승인 보류</span>
+<span class="text-error font-bold">D-3 이내 보완요망</span>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full h-9 bg-surface-container-high hover:bg-surface-container text-primary font-label-code text-label-code uppercase tracking-wider flex items-center justify-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">edit_document</span>
+        산출근거 보완서 등록 바로가기
+      </button>
+</div>
+<!-- Right Card: 예산 검토관 종합의견 -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">rate_review</span>
+<span class="font-headline-sm text-headline-sm text-primary">예산 검토관 종합의견</span>
+</div>
+<span class="font-label-code text-label-code bg-surface-container-high text-primary px-space-xs py-0.5 font-bold">
+          조건부 승인
+        </span>
+</div>
+<!-- Reviewer Profile & Comment -->
+<div class="space-y-space-sm">
+<div class="flex items-center gap-space-sm bg-surface-container-low p-space-sm">
+<div class="w-8 h-8 bg-primary text-on-primary flex items-center justify-center font-label-code text-label-code font-bold">
+            재정
+          </div>
+<div>
+<div class="font-headline-sm text-body-md text-on-surface font-bold">김재원 주무관</div>
+<div class="font-label-code text-label-code text-on-surface-variant">세종특별자치시교육청 재정복지과</div>
+</div>
+</div>
+<blockquote class="bg-surface-bright p-space-sm font-body-sm text-body-sm text-on-surface leading-relaxed italic">
+          "학생 1인당 자부담 경감 방안 검토가 완료되었습니다. 취약계층 학생 전액 지원분(10명, ₩5,000,000)이 지자체 대응예산으로 정상 편성되었음을 확인하였습니다. 단, 싱가포르 안전보험계약은 출국 14일 전까지 우선 집행 완료 권고합니다."
+        </blockquote>
+</div>
+<!-- Audit Metadata -->
+<div class="flex items-center justify-between font-label-code text-label-code text-outline pt-space-2xs">
+<span>최종검토: 2027-04-12 14:30:22</span>
+<span class="text-secondary font-bold">전자서명 인증완료</span>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

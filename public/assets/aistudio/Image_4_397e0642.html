@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline":"#74777e","on-tertiary-container":"#249f92","error-container":"#ffdad6","on-secondary-fixed":"#00174b","on-surface-variant":"#44474e","on-primary-fixed-variant":"#314868","surface-tint":"#495f81","on-error-container":"#93000a","surface-container":"#e5eeff","secondary-container":"#316bf3","surface-container-low":"#eff4ff","on-background":"#0b1c30","secondary":"#0051d5","on-tertiary-fixed-variant":"#005049","inverse-on-surface":"#eaf1ff","inverse-surface":"#213145","primary-container":"#0f2847","tertiary-container":"#002d29","tertiary-fixed":"#89f5e7","surface-variant":"#d3e4fe","tertiary":"#001613","primary-fixed-dim":"#b1c8ef","on-primary-fixed":"#011c3a","inverse-primary":"#b1c8ef","secondary-fixed-dim":"#b4c5ff","surface-bright":"#f8f9ff","on-tertiary":"#ffffff","primary":"#00132c","outline-variant":"#c4c6ce","on-secondary":"#ffffff","surface":"#f8f9ff","on-secondary-fixed-variant":"#003ea8","secondary-fixed":"#dbe1ff","surface-container-high":"#dce9ff","on-primary":"#ffffff","tertiary-fixed-dim":"#6bd8cb","error":"#ba1a1a","on-secondary-container":"#fefcff","on-primary-container":"#7990b4","surface-container-lowest":"#ffffff","background":"#f8f9ff","primary-fixed":"#d5e3ff","on-tertiary-fixed":"#00201d","on-error":"#ffffff","surface-dim":"#cbdbf5","on-surface":"#0b1c30","surface-container-highest":"#d3e4fe"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-2xl":"2rem","space-2xs":"0.125rem","space-xl":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-lg":"1rem","gutter":"0.75rem","space-md":"0.75rem","margin":"1rem"},fontFamily:{"headline-md":["Hanken Grotesk"],"headline-sm":["Hanken Grotesk"],"tabular-num":["JetBrains Mono"],"display-lg":["Hanken Grotesk"],"body-sm":["JetBrains Mono"],"body-lg":["JetBrains Mono"],"label-code":["JetBrains Mono"],"headline-lg":["Hanken Grotesk"],"body-md":["JetBrains Mono"],"display-md":["Hanken Grotesk"]},fontSize:{"headline-md":["1.125rem",{"lineHeight":"1.375rem","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-sm":["1rem",{"lineHeight":"1.25rem","letterSpacing":"0em","fontWeight":"600"}],"tabular-num":["0.8125rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"500"}],"display-lg":["2rem",{"lineHeight":"2.25rem","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"400"}],"body-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.01em","fontWeight":"500"}],"label-code":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.05em","fontWeight":"700"}],"headline-lg":["1.25rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0em","fontWeight":"400"}],"display-md":["1.5rem",{"lineHeight":"1.75rem","letterSpacing":"-0.015em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-primary text-on-primary z-50 flex flex-col justify-between select-none"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-lg flex items-center gap-space-md bg-primary-container shrink-0"><div class="w-9 h-9 bg-surface-container-lowest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-xl">account_balance</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-surface truncate tracking-tight">글로벌 진로탐험대 NEXT</span></div><span class="font-label-code text-label-code text-on-primary-container truncate">세종특별자치시교육청 행정지원포털</span></div></div><div class="px-space-md py-space-sm bg-surface-container/10 flex items-center justify-between shrink-0"><span class="font-label-code text-label-code text-on-primary-container uppercase tracking-wider">기관망 직통 채널</span><span class="inline-flex items-center gap-space-2xs font-label-code text-label-code text-tertiary-fixed"><span class="w-1.5 h-1.5 bg-tertiary-fixed rounded-full animate-pulse"></span>ONLINE</span></div><nav class="flex-1 overflow-y-auto px-space-xs py-space-xs space-y-space-2xs" data-active-classes="bg-primary-container text-surface-bright font-bold"><a class="flex items-center justify-between px-space-md py-space-sm text-on-primary-container hover:bg-primary-container/60 hover:text-surface transition-colors" data-path="dashboard" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">dashboard</span><span class="font-body-md text-body-md tracking-tight">대시보드</span></div><span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface/10 text-surface">SYS</span></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-primary-container text-surface-bright font-bold" data-path="project-management" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">folder_open</span><span class="font-body-md text-body-md tracking-tight">사업관리</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-primary-container hover:bg-primary-container/60 hover:text-surface transition-colors" data-path="budget-management" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">payments</span><span class="font-body-md text-body-md tracking-tight">예산관리</span></div><span class="font-tabular-num text-tabular-num text-surface-variant font-semibold">FY27</span></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-primary-container hover:bg-primary-container/60 hover:text-surface transition-colors" data-path="participation-management" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">groups</span><span class="font-body-md text-body-md tracking-tight">참여관리</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-primary-container hover:bg-primary-container/60 hover:text-surface transition-colors" data-path="safety-management" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">health_and_safety</span><span class="font-body-md text-body-md tracking-tight">안전관리</span></div><span class="font-label-code text-label-code px-space-xs py-0.5 bg-error text-on-error font-bold">2건 미완료</span></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-primary-container hover:bg-primary-container/60 hover:text-surface transition-colors" data-path="performance-evaluation" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">query_stats</span><span class="font-body-md text-body-md tracking-tight">성과관리</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-primary-container hover:bg-primary-container/60 hover:text-surface transition-colors" data-path="alternative-comparison" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">compare_arrows</span><span class="font-body-md text-body-md tracking-tight">대안비교</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-primary-container hover:bg-primary-container/60 hover:text-surface transition-colors" data-path="reports-export" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">description</span><span class="font-body-md text-body-md tracking-tight">보고서</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-primary-container hover:bg-primary-container/60 hover:text-surface transition-colors" data-path="system-administration" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-lg">admin_panel_settings</span><span class="font-body-md text-body-md tracking-tight">시스템관리</span></div></a></nav></div><div class="p-space-md bg-primary-container shrink-0 space-y-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 bg-on-tertiary-container rounded-full"></span><span class="font-body-sm text-body-sm text-surface font-semibold">통합행정망 정상가동중</span></div><span class="font-label-code text-label-code text-on-primary-container">v2.4.1</span></div><div class="flex items-center justify-between font-label-code text-label-code text-on-primary-container pt-space-2xs"><span class="truncate">교육청 통합데이터연계</span><span class="text-tertiary-fixed">SYNC OK</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-sm">home</span><span>행정지원포털</span><span class="text-outline">/</span><span class="text-on-surface font-semibold">운영관리</span></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1"><span class="font-label-code text-label-code text-on-surface-variant uppercase">회계연도</span><select class="bg-transparent font-headline-sm text-body-md text-primary font-bold focus:outline-none cursor-pointer pr-space-xs"><option selected="">2027 사업연도 [선택]</option><option>2026 사업연도</option><option>2025 사업연도</option></select><span class="font-label-code text-label-code bg-surface-container px-space-xs py-0.5 text-primary-container">예시 데이터 기준</span></div><div class="relative hidden lg:block w-72"><span class="material-symbols-outlined absolute left-space-sm top-2 text-outline text-lg">search</span><input class="w-full h-9 pl-9 pr-space-sm bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" placeholder="사업명, 연수단 ID, 문서 검색..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="relative w-9 h-9 flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface" title="시스템 알림" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 bg-error text-on-error font-label-code text-label-code flex items-center justify-center font-bold">3</span></button><button class="w-9 h-9 flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface" title="업무 매뉴얼 / 도움말" type="button"><span class="material-symbols-outlined text-xl">help_outline</span></button><button class="w-9 h-9 flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface" title="시스템 환경설정" type="button"><span class="material-symbols-outlined text-xl">settings</span></button></div><div class="h-6 w-px bg-outline-variant"></div><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UDEam6K8i61R-2cnrEZTy_-Vn42YXJtWCSo1Gdjky5Y_RAGHdADwxgWNuCSgGDTs2m71IBSrQYUo8muhQZsomD8EstXjRIlxO3nxhkUFlk1Uz9R54SRMYwYkApqnHEHUrsE8DoT8hr7l_bLLWiyKwyRWFo0ps9_WngrbC2YiMNyz_dgtQQbIZExnbZT2l-MjeudE7NbJJbLc8iF-yLPV7sRhQR7FbCHE07KyZhfoYOR6qbmV1BBgKi9Q"/><div class="flex flex-col text-left"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-body-md text-on-surface font-bold leading-none">김지현 장학관</span><span class="font-label-code text-label-code bg-primary text-on-primary px-space-xs py-0.5">교육청 총괄 관리자</span></div><span class="font-label-code text-label-code text-on-surface-variant leading-none mt-1">세종교육청 진로교육과</span></div><button class="w-8 h-8 flex items-center justify-center text-outline hover:text-error hover:bg-error-container/30 transition-colors ml-space-xs" title="로그아웃" type="button"><span class="material-symbols-outlined text-lg">logout</span></button></div></div></header><main class="relative w-full pt-16 bg-surface min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Control Banner -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-lg">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs font-label-code text-label-code text-secondary tracking-widest uppercase">
+<span class="w-2 h-2 bg-secondary inline-block"></span>
+<span>MUNICIPAL ADMINISTRATION // EXPEDITION DISPATCH MGMT</span>
+</div>
+<h1 class="font-headline-lg text-display-md text-primary tracking-tight font-bold">사업관리</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        세종시 관내 글로벌 진로탐험대 사업계획, 승인 및 세부 운영내역을 총괄 관리합니다.
+      </p>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="px-space-md py-space-sm bg-surface-container-low text-primary font-label-code text-label-code uppercase tracking-wider hover:bg-surface-container transition-colors flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-base">file_download</span>
+<span>엑셀 내보내기</span>
+</button>
+<button class="px-space-md py-space-sm bg-primary text-on-primary font-label-code text-label-code uppercase tracking-wider hover:bg-primary-container transition-colors flex items-center gap-space-xs" id="open-register-modal" type="button">
+<span class="material-symbols-outlined text-base">add</span>
+<span>신규 사업 등록</span>
+</button>
+</div>
+</div>
+<!-- Operational Stat Cards / Telemetry Strips -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md mb-space-lg">
+<div class="bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant font-label-code text-label-code mb-1">
+<span>총괄 등록 사업</span>
+<span class="material-symbols-outlined text-base text-secondary">inventory_2</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-lg text-display-md text-primary font-bold">14<span class="text-headline-sm font-normal text-on-surface-variant ml-1">건</span></span>
+<span class="font-tabular-num text-body-sm text-secondary bg-surface-container px-space-xs py-0.5 font-bold">FY27 ACTIVE</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant font-label-code text-label-code mb-1">
+<span>총 투입 예정 예산</span>
+<span class="material-symbols-outlined text-base text-secondary">payments</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-lg text-display-md text-primary font-bold">205<span class="text-headline-sm font-normal text-on-surface-variant ml-1">백만원</span></span>
+<span class="font-tabular-num text-body-sm text-on-tertiary-container bg-surface-container-low px-space-xs py-0.5 font-bold">집행율 24.3%</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant font-label-code text-label-code mb-1">
+<span>대상 학생 총원</span>
+<span class="material-symbols-outlined text-base text-secondary">group</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-lg text-display-md text-primary font-bold">280<span class="text-headline-sm font-normal text-on-surface-variant ml-1">명</span></span>
+<span class="font-tabular-num text-body-sm text-primary font-bold bg-surface-container-high px-space-xs py-0.5">선발완료 71%</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant font-label-code text-label-code mb-1">
+<span>안전심의 승인율</span>
+<span class="material-symbols-outlined text-base text-error">security</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-lg text-display-md text-primary font-bold">85.7<span class="text-headline-sm font-normal text-on-surface-variant ml-1">%</span></span>
+<span class="font-tabular-num text-body-sm text-error bg-error-container/40 px-space-xs py-0.5 font-bold">미완료 2건</span>
+</div>
+</div>
+</div>
+<!-- Integrated Filter & Search Console -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm mb-space-lg">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-low/40 px-space-sm py-space-xs">
+<div class="flex items-center gap-space-xs font-label-code text-label-code text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">filter_alt</span>
+<span class="font-bold">행정 파라미터 필터 &amp; 다차원 검색기</span>
+</div>
+<span class="font-tabular-num text-label-code text-on-surface-variant">조건 검색 일치 항목: 4건</span>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-12 gap-space-sm items-end" onsubmit="event.preventDefault();">
+<!-- Search Input -->
+<div class="md:col-span-4 flex flex-col gap-space-2xs">
+<label class="font-label-code text-label-code text-on-surface-variant font-bold">사업명 또는 키워드 검색</label>
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-2 top-2 text-outline text-base">search</span>
+<input class="w-full h-9 pl-8 pr-2 bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest" placeholder="사업명 또는 키워드 검색..." type="text" value="2027 글로벌 진로탐험대"/>
+</div>
+</div>
+<!-- Filter 1: 회계연도 -->
+<div class="md:col-span-2 flex flex-col gap-space-2xs">
+<label class="font-label-code text-label-code text-on-surface-variant font-bold">사업연도</label>
+<select class="w-full h-9 px-space-xs bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none">
+<option selected="">2027년 (당해년도)</option>
+<option>2026년 (직전년도)</option>
+<option>2025년</option>
+</select>
+</div>
+<!-- Filter 2: 운영방식 -->
+<div class="md:col-span-2 flex flex-col gap-space-2xs">
+<label class="font-label-code text-label-code text-on-surface-variant font-bold">운영방식</label>
+<select class="w-full h-9 px-space-xs bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none">
+<option value="all">전체 운영방식</option>
+<option selected="" value="outbound">국외방문형</option>
+<option value="domestic">국내집중형</option>
+<option value="hybrid">온·오프라인연계</option>
+</select>
+</div>
+<!-- Filter 3: 진행 상태 -->
+<div class="md:col-span-2 flex flex-col gap-space-2xs">
+<label class="font-label-code text-label-code text-on-surface-variant font-bold">진행 상태</label>
+<select class="w-full h-9 px-space-xs bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none">
+<option value="all">전체 상태</option>
+<option value="plan">계획수립</option>
+<option value="budget">예산검토</option>
+<option value="safety">안전심의</option>
+<option selected="" value="operating">운영중</option>
+<option value="closed">정산완료</option>
+</select>
+</div>
+<!-- Actions -->
+<div class="md:col-span-2 flex items-center gap-space-xs">
+<button class="w-1/2 h-9 bg-surface-container text-on-surface font-label-code text-label-code font-bold hover:bg-surface-container-high transition-colors" type="button">
+          초기화
+        </button>
+<button class="w-1/2 h-9 bg-secondary text-on-secondary font-label-code text-label-code font-bold hover:bg-secondary-container transition-colors" type="submit">
+          조회 실행
+        </button>
+</div>
+</form>
+</div>
+<!-- Master-Detail Split Workspace Layout -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md items-start">
+<!-- Left Master Column: Project Ledger Table (5 cols on XL) -->
+<div class="xl:col-span-5 flex flex-col gap-space-sm bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-low/30 px-space-sm py-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base text-primary">table_chart</span>
+<span class="font-headline-sm text-body-lg text-primary font-bold">사업 목록 현황</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">정렬: 최종수정일 역순</span>
+</div>
+<!-- Compact Ledger Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm">
+<thead>
+<tr class="bg-primary text-on-primary font-label-code text-label-code uppercase tracking-wider">
+<th class="p-space-xs font-semibold">사업명 / 사업 유형</th>
+<th class="p-space-xs font-semibold text-center">인원 / 상태</th>
+<th class="p-space-xs font-semibold text-right">총사업비</th>
+<th class="p-space-xs font-semibold text-center">조회</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high font-body-sm">
+<!-- Row 1 (Active/Selected) -->
+<tr class="bg-surface-container-high/60 cursor-pointer hover:bg-surface-container transition-colors">
+<td class="p-space-xs">
+<div class="font-headline-sm text-body-md text-primary font-bold truncate max-w-[210px]" title="2027 글로벌 진로탐험대 시범사업">
+                  2027 글로벌 진로탐험대 시범사업
+                </div>
+<div class="flex items-center gap-space-2xs text-on-surface-variant font-label-code text-label-code mt-0.5">
+<span class="text-secondary font-bold">국외체험(싱가포르)</span>
+<span>•</span>
+<span>27.07.15~07.22</span>
+</div>
+</td>
+<td class="p-space-xs text-center">
+<div class="font-tabular-num font-bold text-on-surface">100명</div>
+<span class="inline-block mt-0.5 font-label-code text-label-code px-1.5 py-0.5 bg-surface-container text-on-tertiary-container font-bold">
+                  운영중
+                </span>
+</td>
+<td class="p-space-xs text-right font-tabular-num font-semibold text-on-surface">
+                ₩50,000,000
+                <div class="font-label-code text-label-code text-on-surface-variant font-normal">진로교육과</div>
+</td>
+<td class="p-space-xs text-center">
+<button class="w-7 h-7 bg-primary text-on-primary flex items-center justify-center font-label-code text-label-code" title="상세보기 선택됨" type="button">
+<span class="material-symbols-outlined text-sm">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-space-xs">
+<div class="font-headline-sm text-body-md text-primary font-bold truncate max-w-[210px]" title="세종 청소년 UN SDGs 글로벌 포럼">
+                  세종 청소년 UN SDGs 글로벌 포럼
+                </div>
+<div class="flex items-center gap-space-2xs text-on-surface-variant font-label-code text-label-code mt-0.5">
+<span class="text-on-surface-variant font-bold">국제교류(스위스)</span>
+<span>•</span>
+<span>27.08.01~08.08</span>
+</div>
+</td>
+<td class="p-space-xs text-center">
+<div class="font-tabular-num font-bold text-on-surface">60명</div>
+<span class="inline-block mt-0.5 font-label-code text-label-code px-1.5 py-0.5 bg-surface-container text-secondary font-bold">
+                  안전심의
+                </span>
+</td>
+<td class="p-space-xs text-right font-tabular-num font-semibold text-on-surface">
+                ₩42,000,000
+                <div class="font-label-code text-label-code text-on-surface-variant font-normal">미래교육과</div>
+</td>
+<td class="p-space-xs text-center">
+<button class="w-7 h-7 bg-surface-container text-primary flex items-center justify-center font-label-code text-label-code hover:bg-surface-container-high" title="상세보기" type="button">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-space-xs">
+<div class="font-headline-sm text-body-md text-primary font-bold truncate max-w-[210px]" title="유럽 첨단 항공우주 과학캠프">
+                  유럽 첨단 항공우주 과학캠프
+                </div>
+<div class="flex items-center gap-space-2xs text-on-surface-variant font-label-code text-label-code mt-0.5">
+<span class="text-on-surface-variant font-bold">해외연구기관(독·불)</span>
+<span>•</span>
+<span>27.09.10~09.18</span>
+</div>
+</td>
+<td class="p-space-xs text-center">
+<div class="font-tabular-num font-bold text-on-surface">40명</div>
+<span class="inline-block mt-0.5 font-label-code text-label-code px-1.5 py-0.5 bg-surface-container text-on-primary-fixed-variant font-bold">
+                  예산검토
+                </span>
+</td>
+<td class="p-space-xs text-right font-tabular-num font-semibold text-on-surface">
+                ₩75,000,000
+                <div class="font-label-code text-label-code text-on-surface-variant font-normal">진로교육과</div>
+</td>
+<td class="p-space-xs text-center">
+<button class="w-7 h-7 bg-surface-container text-primary flex items-center justify-center font-label-code text-label-code hover:bg-surface-container-high" title="상세보기" type="button">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-space-xs">
+<div class="font-headline-sm text-body-md text-primary font-bold truncate max-w-[210px]" title="아시아 친환경 녹색성장 탐방대">
+                  아시아 친환경 녹색성장 탐방대
+                </div>
+<div class="flex items-center gap-space-2xs text-on-surface-variant font-label-code text-label-code mt-0.5">
+<span class="text-on-surface-variant font-bold">지역연계(일본)</span>
+<span>•</span>
+<span>27.10.05~10.12</span>
+</div>
+</td>
+<td class="p-space-xs text-center">
+<div class="font-tabular-num font-bold text-on-surface">80명</div>
+<span class="inline-block mt-0.5 font-label-code text-label-code px-1.5 py-0.5 bg-surface-container-high text-on-surface font-bold">
+                  계획수립
+                </span>
+</td>
+<td class="p-space-xs text-right font-tabular-num font-semibold text-on-surface">
+                ₩38,000,000
+                <div class="font-label-code text-label-code text-on-surface-variant font-normal">환경교육팀</div>
+</td>
+<td class="p-space-xs text-center">
+<button class="w-7 h-7 bg-surface-container text-primary flex items-center justify-center font-label-code text-label-code hover:bg-surface-container-high" title="상세보기" type="button">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination / Audit Strip -->
+<div class="flex items-center justify-between pt-space-xs font-label-code text-label-code text-on-surface-variant">
+<span>페이지 1 / 1 (전체 4건 로드)</span>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 bg-surface-container text-on-surface disabled:opacity-40" disabled="" type="button">이전</button>
+<button class="px-2 py-1 bg-primary text-on-primary font-bold" type="button">1</button>
+<button class="px-2 py-1 bg-surface-container text-on-surface disabled:opacity-40" disabled="" type="button">다음</button>
+</div>
+</div>
+<!-- Visual Context: Institutional Photo Card -->
+<div class="mt-space-sm bg-surface-container-low p-space-sm">
+<div class="flex items-center justify-between mb-space-xs font-label-code text-label-code text-on-surface-variant">
+<span>현지 거점 연구소 및 탐방지</span>
+<span class="text-secondary font-bold">SINGAPORE BIO-POLIS</span>
+</div>
+<img class="w-full h-32 object-cover" data-alt="High-tech modern biopolis research complex and innovation district in Singapore under clean daytime lighting, representing academic student exploration in AI, biotechnology and sustainable smart cities with blue architectural tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp1xRXjnNlniui-VaOU8M4lml-DPZhx7sB_baSib2x43R1WdbvJvp5coyK98uL3qGcNytAa9My_COB8tE40Ayk9dag5OmXLta_q-Vjw5wkNQyzI-_R8Gox1OmaM6jsDna873TAmeMBTeD-EOVEYpqkSaZj5zYEc-Le__XGjP2pIPiF48Wqtre_15_jJvIpN40h0LUMafLDxQNrZ58Y40iqi1xkcYsolPtp2IuLNH-LxOrEZdwVH-U"/>
+</div>
+</div>
+<!-- Right Detail Column: Selected Project Comprehensive Panel (7 cols on XL) -->
+<div class="xl:col-span-7 flex flex-col gap-space-sm bg-surface-container-lowest p-space-md shadow-sm">
+<!-- Detail Header Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-space-sm gap-space-xs bg-surface-container-low/40 px-space-sm py-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 bg-secondary"></span>
+<h2 class="font-headline-sm text-body-lg text-primary font-bold tracking-tight">선택 사업 상세정보: 2027 글로벌 진로탐험대 시범사업</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code bg-surface-container-high px-space-xs py-0.5 text-primary font-bold">ID: PRJ-2027-SG01</span>
+<span class="font-label-code text-label-code bg-surface-container text-on-tertiary-container px-space-xs py-0.5 font-bold">상태: 운영승인완료</span>
+</div>
+</div>
+<!-- Tab Navigation Strip -->
+<div class="flex flex-wrap items-center bg-surface-container gap-space-2xs p-space-2xs text-label-code font-label-code uppercase">
+<button class="px-space-md py-space-xs bg-primary text-on-primary font-bold" type="button">기본정보 (선택됨)</button>
+<button class="px-space-md py-space-xs bg-surface-container-low text-on-surface hover:bg-surface-container-lowest transition-colors" type="button">운영계획</button>
+<button class="px-space-md py-space-xs bg-surface-container-low text-on-surface hover:bg-surface-container-lowest transition-colors flex items-center gap-1" type="button">
+<span>예산</span>
+<span class="font-tabular-num font-bold text-secondary">₩50M</span>
+</button>
+<button class="px-space-md py-space-xs bg-surface-container-low text-on-surface hover:bg-surface-container-lowest transition-colors flex items-center gap-1" type="button">
+<span>참여 현황</span>
+<span class="font-tabular-num font-bold text-primary">100명</span>
+</button>
+<button class="px-space-md py-space-xs bg-surface-container-low text-on-surface hover:bg-surface-container-lowest transition-colors flex items-center gap-1" type="button">
+<span>안전관리</span>
+<span class="font-tabular-num font-bold text-on-tertiary-container">80%</span>
+</button>
+<button class="px-space-md py-space-xs bg-surface-container-low text-on-surface hover:bg-surface-container-lowest transition-colors" type="button">교육성과</button>
+<button class="px-space-md py-space-xs bg-surface-container-low text-on-surface hover:bg-surface-container-lowest transition-colors" type="button">변경 이력</button>
+</div>
+<!-- Tab 1: Administrative Field Grid (Editable Specimen) -->
+<div class="space-y-space-md pt-space-xs">
+<!-- Standard Notice / Validation Guide Strip -->
+<div class="bg-surface-container-low p-space-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5">verified_user</span>
+<div class="flex flex-col text-on-surface-variant font-body-sm text-body-sm">
+<span class="font-bold text-on-surface">행정 데이터 무결성 검증 기준</span>
+<span>필수 입력 항목이 누락되면 해당 필드 아래에 구체적인 오류 안내문('※ 필수 입력 항목입니다')을 표기하는 표준 행정 가이드라인을 준수합니다.</span>
+</div>
+</div>
+<!-- Two-Column Form Field Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- 사업 목적 (Full Span) -->
+<div class="md:col-span-2 flex flex-col gap-space-2xs">
+<label class="font-label-code text-label-code text-on-surface-variant font-bold flex items-center gap-1">
+<span>사업 목적</span>
+<span class="text-error font-bold">*</span>
+</label>
+<textarea class="w-full p-space-xs bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest leading-relaxed" rows="2">세종시 관내 고교생 대상 글로벌 신산업 분야(AI, 스마트시티) 현장 탐색 및 맞춤형 진로 설계 지원</textarea>
+</div>
+<!-- 추진 배경 (Full Span) -->
+<div class="md:col-span-2 flex flex-col gap-space-2xs">
+<label class="font-label-code text-label-code text-on-surface-variant font-bold flex items-center gap-1">
+<span>추진 배경</span>
+<span class="text-error font-bold">*</span>
+</label>
+<input class="w-full h-9 px-space-xs bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest" type="text" value="2027 세종미래교육 비전 연계 및 글로벌 역량 함양 실무 정책"/>
+</div>
+<!-- 대상 및 인원 -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-code text-label-code text-on-surface-variant font-bold flex items-center gap-1">
+<span>대상 및 인원 구성</span>
+<span class="text-error font-bold">*</span>
+</label>
+<input class="w-full h-9 px-space-xs bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest" type="text" value="관내 일반고 및 특성화고 1~2학년 선발 100명"/>
+<span class="font-label-code text-label-code text-secondary font-bold">사회배려대상자 의무 배정 기준 (20%) 충족완료</span>
+</div>
+<!-- 운영 기간 및 일정 -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-code text-label-code text-on-surface-variant font-bold flex items-center gap-1">
+<span>운영 기간 및 일정</span>
+<span class="text-error font-bold">*</span>
+</label>
+<div class="flex items-center gap-space-xs">
+<input class="w-1/2 h-9 px-space-xs bg-surface-container-low font-body-sm text-body-sm text-on-surface text-center focus:outline-none focus:bg-surface-container-lowest" type="text" value="2027.07.15"/>
+<span class="text-on-surface-variant font-bold">~</span>
+<input class="w-1/2 h-9 px-space-xs bg-surface-container-low font-body-sm text-body-sm text-on-surface text-center focus:outline-none focus:bg-surface-container-lowest" type="text" value="2027.07.22"/>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">파견 기간: 6박 8일 현지 체류 기준</span>
+</div>
+<!-- 방문 기관 -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-code text-label-code text-on-surface-variant font-bold flex items-center gap-1">
+<span>주요 방문 기관</span>
+<span class="text-error font-bold">*</span>
+</label>
+<input class="w-full h-9 px-space-xs bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest" type="text" value="싱가포르 국립대(NUS), A*STAR 연구소, 구글 아태본부"/>
+</div>
+<!-- 총괄 담당자 -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-code text-label-code text-on-surface-variant font-bold flex items-center gap-1">
+<span>총괄 담당자 (장학관/연구사)</span>
+<span class="text-error font-bold">*</span>
+</label>
+<input class="w-full h-9 px-space-xs bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest" type="text" value="김지현 장학관 (044-320-1542, jihyun@sje.go.kr)"/>
+</div>
+<!-- 추진 상태 및 결재 번호 -->
+<div class="md:col-span-2 flex flex-col gap-space-2xs bg-surface-container-low p-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-on-surface-variant font-bold">공식 행정 결재 및 감사 상태</span>
+<span class="font-label-code text-label-code bg-surface-container text-on-surface px-space-xs py-0.5">정부 전자문서유통시스템 연계</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm pt-space-2xs">
+<div class="flex items-center justify-between bg-surface-container-lowest px-space-sm py-space-xs">
+<span class="font-body-sm text-on-surface-variant">추진 상태:</span>
+<span class="font-headline-sm text-body-md text-on-tertiary-container font-bold">운영 승인 완료</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest px-space-sm py-space-xs">
+<span class="font-body-sm text-on-surface-variant">결재문서번호:</span>
+<span class="font-tabular-num text-body-sm text-primary font-bold">진로-2027-0482</span>
+</div>
+</div>
+</div>
+<!-- Simulated Field with Validation Guard Demonstration -->
+<div class="md:col-span-2 flex flex-col gap-space-2xs">
+<label class="font-label-code text-label-code text-on-surface-variant font-bold flex items-center justify-between">
+<span class="flex items-center gap-1">
+<span>현지 인솔단 지정 증빙 첨부서류</span>
+<span class="text-error font-bold">*</span>
+</span>
+<span class="font-label-code text-label-code text-outline">규정: 교원 1인당 학생 15명 이하 엄수</span>
+</label>
+<input class="w-full h-9 px-space-xs bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none" readonly="" type="text" value="2027_싱가포르_인솔교사배치계획_최종승인.pdf (1.4MB)"/>
+</div>
+</div>
+<!-- Action Control Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-md bg-surface-container-low/50 px-space-sm py-space-sm">
+<div class="flex items-center gap-space-xs font-label-code text-label-code text-on-surface-variant">
+<span class="material-symbols-outlined text-base text-secondary">history</span>
+<span>최종 갱신: 2027.05.14 16:32:01 (KST)</span>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto justify-end">
+<button class="px-space-md py-space-sm bg-surface-container-lowest text-primary font-label-code text-label-code uppercase tracking-wider hover:bg-surface-container transition-colors flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-base">print</span>
+<span>사업계획서 인쇄/PDF</span>
+</button>
+<button class="px-space-md py-space-sm bg-surface-container text-secondary font-label-code text-label-code uppercase tracking-wider hover:bg-surface-container-high transition-colors flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-base">health_and_safety</span>
+<span>안전점검 연계 확인</span>
+</button>
+<button class="px-space-md py-space-sm bg-primary text-on-primary font-label-code text-label-code uppercase tracking-wider hover:bg-primary-container transition-colors flex items-center gap-space-xs" id="save-btn" type="button">
+<span class="material-symbols-outlined text-base">save</span>
+<span>수정사항 저장</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Modal Mockup: New Project Registration Form (Hidden by default, triggered via script) -->
+<div class="fixed inset-0 z-50 bg-primary/60 flex items-center justify-center p-space-md hidden" id="register-modal">
+<div class="bg-surface-container-lowest w-full max-w-3xl shadow-xl flex flex-col">
+<!-- Modal Header -->
+<div class="bg-primary text-on-primary p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-lg">post_add</span>
+<span class="font-headline-sm text-headline-sm font-bold">신규 글로벌 진로탐험 사업 등록</span>
+</div>
+<button class="text-on-primary hover:text-surface-variant transition-colors" id="close-register-modal" type="button">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg space-y-space-md overflow-y-auto max-h-[768px]">
+<div class="bg-surface-container-low p-space-sm font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">info</span>
+<span>필수 항목 누락 시 경고문이 표시됩니다. 행정 서식 양식에 맞춰 빈칸을 채워주십시오.</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-2xs md:col-span-2">
+<label class="font-label-code text-label-code text-on-surface-variant font-bold flex items-center gap-1">
+<span>사업 공식 명칭</span>
+<span class="text-error">*</span>
+</label>
+<input class="w-full h-9 px-space-xs bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest" id="modal-project-title" placeholder="예: 2027 세종 청소년 실리콘밸리 테크원정대" type="text"/>
+<span class="hidden font-label-code text-label-code text-error font-bold flex items-center gap-1" id="title-error">
+<span class="material-symbols-outlined text-xs">error</span>
+<span>※ 필수 입력 항목입니다</span>
+</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-code text-label-code text-on-surface-variant font-bold">운영 방식 구분</label>
+<select class="w-full h-9 px-space-xs bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none">
+<option>국외방문형 (해외직접파견)</option>
+<option>국내집중형 (국제특화캠프)</option>
+<option>온·오프라인연계형</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-code text-label-code text-on-surface-variant font-bold">소관 부서</label>
+<select class="w-full h-9 px-space-xs bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none">
+<option>세종교육청 진로교육과</option>
+<option>세종교육청 미래교육과</option>
+<option>환경교육팀</option>
+<option>학교자율공모</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-code text-label-code text-on-surface-variant font-bold flex items-center gap-1">
+<span>목표 학생 정원 (명)</span>
+<span class="text-error">*</span>
+</label>
+<input class="w-full h-9 px-space-xs bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest" placeholder="50" type="number"/>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-code text-label-code text-on-surface-variant font-bold flex items-center gap-1">
+<span>신청 총예산액 (원)</span>
+<span class="text-error">*</span>
+</label>
+<input class="w-full h-9 px-space-xs bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest font-tabular-num" placeholder="예: 45,000,000" type="text"/>
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="bg-surface-container-low p-space-md flex items-center justify-between">
+<span class="font-label-code text-label-code text-on-surface-variant">상태: 초안(DRAFT)으로 등록됩니다</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-space-sm bg-surface-container text-on-surface font-label-code text-label-code uppercase tracking-wider hover:bg-surface-container-high transition-colors" id="modal-cancel-btn" type="button">
+            취소
+          </button>
+<button class="px-space-md py-space-sm bg-primary text-on-primary font-label-code text-label-code uppercase tracking-wider hover:bg-primary-container transition-colors" id="modal-submit-btn" type="button">
+            신규 등록 완료
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Feedback element -->
+<div class="fixed bottom-6 right-6 z-50 bg-primary text-on-primary p-space-md shadow-xl flex items-center gap-space-sm transform translate-y-24 opacity-0 transition-all duration-300" id="status-toast">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<span class="font-body-sm text-body-sm font-semibold" id="toast-message">사업 정보가 행정 데이터베이스에 즉시 반영되었습니다.</span>
+</div>
+</div>
+<script>
+  (function() {
+    const modal = document.getElementById('register-modal');
+    const openBtn = document.getElementById('open-register-modal');
+    const closeBtn = document.getElementById('close-register-modal');
+    const cancelBtn = document.getElementById('modal-cancel-btn');
+    const submitBtn = document.getElementById('modal-submit-btn');
+    const titleInput = document.getElementById('modal-project-title');
+    const titleError = document.getElementById('title-error');
+    
+    const saveBtn = document.getElementById('save-btn');
+    const toast = document.getElementById('status-toast');
+    const toastMsg = document.getElementById('toast-message');
+
+    function showToast(message) {
+      if (toast && toastMsg) {
+        toastMsg.textContent = message;
+        toast.classList.remove('translate-y-24', 'opacity-0');
+        setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0');
+        }, 3500);
+      }
+    }
+
+    if (openBtn && modal) {
+      openBtn.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        if (titleInput) titleInput.value = '';
+        if (titleError) titleError.classList.add('hidden');
+      });
+    }
+
+    function closeModal() {
+      if (modal) modal.classList.add('hidden');
+    }
+
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+
+    if (submitBtn) {
+      submitBtn.addEventListener('click', () => {
+        if (!titleInput.value.trim()) {
+          if (titleError) titleError.classList.remove('hidden');
+          titleInput.focus();
+          return;
+        }
+        closeModal();
+        showToast('신규 사업 [' + titleInput.value.trim() + '] 계획이 성공적으로 등록되었습니다.');
+      });
+    }
+
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        showToast('2027 글로벌 진로탐험대 시범사업 변경사항이 정상적으로 저장되었습니다.');
+      });
+    }
+  })();
+</script></main></div></body></html>
